@@ -9,3 +9,4 @@
 |4|《Python学习手册》 第4版 | learning\_python | |
 |5|《大话数据结构》 | play\_with\_data\_structure | |
 |6|《SQL必知必会》 第4版 | sql | |
+|7|《Unix Shell范例精解》 第4版 | unix\_shells\_by\_example | |
