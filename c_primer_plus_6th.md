@@ -132,3 +132,9 @@ int main(void) {
 * 声明char类型变量
 * 字符常量和初始化
 * 非打印字符
+* 打印字符
+* 有符号还是无符号
+
+### 3.4.4 _Bool类型
+### 3.4.5 可移植类型：stdint.h和inttypes.h
+### float、double和long double
