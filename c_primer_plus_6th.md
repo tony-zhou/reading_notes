@@ -137,4 +137,10 @@ int main(void) {
 
 ### 3.4.4 _Bool类型
 ### 3.4.5 可移植类型：stdint.h和inttypes.h
-### float、double和long double
+### 3.4.6 float、double和long double
+	1. float类型必须至少精确表示小数点后的6位有效数字
+	2. double类型至少有13位有效数字
+* 声明浮点型变量
+* 浮点型常量
+* 打印浮点型值
+* 浮点值的上溢和下溢
