@@ -59,6 +59,7 @@
 * 使用数组
 * 起别名
 * 二维数组
+	* double[][] a = new double[M][N] 
 
 ### 1.1.6 静态方法
 * 静态方法
@@ -107,6 +108,35 @@
 
 ### 1.1.10 二分查找
 * 二分查找
+
+
+	```java
+	import java.util.Arrays;
+	public class BinarySearch {
+	    
+	    public static int rank(int key, int[] a) {
+	        int lo = 0;
+	        int hi = a.length - 1;
+	        while (lo <= hi) {
+	            int mid = lo + (hi - lo) / 2;
+	            if (key < a[mid]) hi = mid - 1;
+	            else if (key > a[mid]) lo = mid + 1;
+	            else return mid;
+	        }
+	        return -1;
+	    }
+	    
+	    public static void main(String[] args) {
+	        int[] whitelist = In.readInts(args[0]);
+	        Arrays.sort(whitelist);
+	        While(!In.isEmpty()) {
+	            int key = StdIn.readInt();
+	            if (rank(key, whitelist) < 0)
+	                StdOut.println(key);
+	        }
+	    }
+	}
+	```
 * 开发用例
 * 白名单过滤
 * 性能
@@ -148,7 +178,13 @@
 	* 一般用于初始化实例变量 
 * 实例方法
 * 作用域
+	* 参数变量 - 整个方法
+	* 局部变量 - 当前代码段中它的定义之后所有的语句
+	* 实例变量 - 整个类（如果出现二义性，可以使用this前缀来区别实例变量） 
 * API、用例与实现
+	* 定义一份API：API的作用是将使用和实现分离，以实现模块化编程
+	* 用一个Java类实现API定义：选择适当的实例变量，编写构造函数和实例方法
+	* 实现多个测试用例来验证前两步做出的设计决定
 
 ### 1.2.4 更多抽象数据类型的实现
 * 日期
